@@ -13,7 +13,7 @@ body {
   }
   
   .hiragana {
-    flex-basis: 20%;
+    flex-basis: 15%;
     margin: 5px;
     font-size: 3em;
     text-align: center;
@@ -108,6 +108,20 @@ body {
       
   }
 
+
+.clear-b{
+    background-color: rgb(43, 88, 236);
+    height: 50px;
+    width: 150px;
+    color: #FFFFFF;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-color: none;
+    margin: 0 auto; /* Center the canvas horizontally */
+  display: block; /* Ensure the canvas is a block element to center it properly */
+  margin-top: 20px;
+
+}
   
 
 
