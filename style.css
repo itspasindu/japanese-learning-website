@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&display=swap');
+
+
 /* Add a bright, colorful background */
 body {
     background-color: #fdfdfd; /* gold */
@@ -25,6 +28,9 @@ body {
     width: 45px;
   }
   
+  .clicked {
+    background-color: yellow;
+  }
   .selected {
     background-color: #FF0000; /* red */
     color: #FFFFFF; /* white */
@@ -122,8 +128,23 @@ body {
   margin-top: 20px;
 
 }
-  
 
+.hea1{
+    color: #006eff;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    text-align: center;
+    font-size: 50px;
+}
 
+.ins{
+    color: #ff0062;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    text-align: left;
+    font-size: 20px;
+}
+
+.ins p {
+    font-size: 25px;
+}
   
   
