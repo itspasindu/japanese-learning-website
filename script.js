@@ -53,6 +53,7 @@ const audioFiles = {
 function playSound(char) {
   const audio = new Audio(audioFiles[char]);
   audio.play();
+  
 }
 
 const canvas = document.getElementById('canvas');
@@ -88,5 +89,6 @@ const clearButton = document.getElementById('clear-button');
 clearButton.addEventListener('click', function() {
   context.clearRect(0, 0, canvas.width, canvas.height);
 });
+
 
   
