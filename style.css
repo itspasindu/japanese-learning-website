@@ -1,0 +1,115 @@
+/* Add a bright, colorful background */
+body {
+    background-color: #fdfdfd; /* gold */
+  }
+  
+  /* Use a large, easy-to-read font for the hiragana characters */
+  .hiragana-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+  
+  .hiragana {
+    flex-basis: 20%;
+    margin: 5px;
+    font-size: 3em;
+    text-align: center;
+    background-color: #FFFFFF; /* white */
+    border: 2px solid #000000; /* black */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #999999;
+    cursor: pointer;
+    width: 45px;
+  }
+  
+  .selected {
+    background-color: #FF0000; /* red */
+    color: #FFFFFF; /* white */
+  }
+  
+  
+  /* Add a playful animation when the player clicks on a hiragana character */
+  .hiragana:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-out;
+  }
+  
+  /* Add styles for the matching and mismatched elements */
+  .match {
+    background-color: #00FF00; /* green */
+    border: 2px solid #008000; /* dark green */
+    box-shadow: 0 0 10px #008000;
+    color: #FFFFFF; /* white */
+    font-weight: bold;
+    text-shadow: 0 0 2px #000000; /* black */
+  }
+  
+  .mismatch {
+    background-color: #FF0000; /* red */
+    border: 2px solid #800000; /* dark red */
+    box-shadow: 0 0 10px #800000;
+    color: #FFFFFF; /* white */
+    font-weight: bold;
+    text-shadow: 0 0 2px #000000; /* black */
+  }
+  
+  .match, .mismatch {
+    cursor: default;
+  }
+  
+  .match audio {
+    display: none;
+  }
+  
+  .mismatch audio {
+    display: none;
+  }
+  
+  /* Add playful language for feedback messages */
+  #feedback {
+    font-size: 2em;
+    font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+    margin-top: 20px;
+  }
+  
+  #feedback.correct {
+    color: #00FF00; /* green */
+  }
+  
+  #feedback.incorrect {
+    color: #FF0000; /* red */
+  }
+  
+
+  .canvas-container {
+    margin-top: 20px;
+    background-color: #FFFFFF; /* white */
+    border: 2px solid #000000; /* black */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #999999;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .canvas {
+    width: 25%;
+    height: 170px;
+    cursor: crosshair;
+    border: 2px solid #000000; /* black */
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the canvas horizontally */
+  display: block; /* Ensure the canvas is a block element to center it properly */
+      
+  }
+
+  
+
+
+  
+  

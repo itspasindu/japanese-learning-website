@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hiragana Practice</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Hiragana Practice</h1>
+	</header>
+    <main>
+        <h2>Instructions</h2>
+        <p>Click on each hiragana character to hear its pronunciation. Practice writing the characters using the canvas below.</p>
+        <div class="canvas">
+            
+          <canvas id="canvas"></canvas>
+      
+        </div>
+        <div class="hiragana-container">
+          <div class="hiragana" onclick="playSound('a')">あ</div>
+          <div class="hiragana" onclick="playSound('i')">い</div>
+          <div class="hiragana" onclick="playSound('u')">う</div>
+          <div class="hiragana" onclick="playSound('e')">え</div>
+          <div class="hiragana" onclick="playSound('o')">お</div>
+          <!-- Add more hiragana characters here -->
+        </div>
+        <button id="clear-button">Clear Canvas</button>
+
+
+      </main>
+      
+    
+	<script src="script.js"></script>
+</body>
+</html>
