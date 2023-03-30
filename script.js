@@ -49,6 +49,8 @@ const audioFiles = {
   // Add more hiragana characters and audio files here
 };
 
+console.log("Japanese learning website")
+
 // Function to play a sound file for a given hiragana character
 function playSound(char) {
   const audio = new Audio(audioFiles[char]);
@@ -90,5 +92,13 @@ clearButton.addEventListener('click', function() {
   context.clearRect(0, 0, canvas.width, canvas.height);
 });
 
+
+
+
+let button = document.getElementById("clear-button");
+
+button.addEventListener("click", function() {
+  alert("Canvas clean success!");
+});
 
   
