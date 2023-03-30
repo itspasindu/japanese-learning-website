@@ -133,7 +133,7 @@ body {
     color: #006eff;
     font-family: 'Edu NSW ACT Foundation', cursive;
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
 }
 
 .ins{
@@ -144,7 +144,19 @@ body {
 }
 
 .ins p {
-    font-size: 25px;
+    font-size: 20px;
 }
   
   
+
+.footer{
+  background-color: #006eff;
+  width: 100%;
+  height: 100px;
+}
+
+.footer h3{
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
