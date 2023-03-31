@@ -55,7 +55,7 @@ console.log("Japanese learning website")
 function playSound(char) {
   const audio = new Audio(audioFiles[char]);
   audio.play();
-  
+
 }
 
 const canvas = document.getElementById('canvas');
@@ -63,18 +63,18 @@ const context = canvas.getContext('2d');
 
 let isDrawing = false;
 
-canvas.addEventListener('mousedown', function(e) {
+canvas.addEventListener('mousedown', function (e) {
   isDrawing = true;
   draw(e);
 });
 
-canvas.addEventListener('mousemove', function(e) {
+canvas.addEventListener('mousemove', function (e) {
   if (isDrawing) {
     draw(e);
   }
 });
 
-canvas.addEventListener('mouseup', function() {
+canvas.addEventListener('mouseup', function () {
   isDrawing = false;
 });
 
@@ -87,18 +87,36 @@ function draw(e) {
   context.fill();
 }
 
-const clearButton = document.getElementById('clear-button');
-clearButton.addEventListener('click', function() {
+const clearButton = document.getElementById('clearbutton');
+clearButton.addEventListener('click', function () {
   context.clearRect(0, 0, canvas.width, canvas.height);
 });
 
 
 
 
-let button = document.getElementById("clear-button");
 
-button.addEventListener("click", function() {
-  alert("Canvas clean success!");
-});
 
-  
+
+var clearbutton = document.getElementById('clearbutton');
+  var popupOverlay = document.createElement('div');
+  var popupMessage = document.createElement('div');
+
+  popupOverlay.className = 'popup-overlay';
+  popupMessage.className = 'popup-message';
+  popupMessage.innerHTML = 'Clearing the canvas is successful';
+
+  clearbutton.addEventListener('click', function() {
+    // Add the popup overlay and message to the document body
+    document.body.appendChild(popupOverlay);
+    popupOverlay.appendChild(popupMessage);
+
+    // Show the popup overlay
+    popupOverlay.style.display = 'flex';
+
+    // Hide the popup overlay and message after 2 seconds
+    setTimeout(function() {
+      popupOverlay.style.display = 'none';
+      popupOverlay.removeChild(popupMessage);
+    }, 500);
+  });
