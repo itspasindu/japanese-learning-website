@@ -174,3 +174,34 @@ body {
 .header li{
   text-decoration: none;
 }
+
+
+  /* Customize the popup overlay */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Customize the popup message */
+  .popup-message {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+
+  .footer h4{
+    color:#000000;
+    text-align: center;
+    background: #00801c;
+    margin-top: -6px;
+  }
